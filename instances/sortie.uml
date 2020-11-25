@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="process model">
+  <packagedElement xsi:type="uml:Activity">
+    <edge xsi:type="uml:ControlFlow" target="//@packagedElement.0/activity2" source="//@packagedElement.0/activity1"/>
+    <edge xsi:type="uml:ControlFlow" target="//@packagedElement.0/activity3" source="//@packagedElement.0/activity2"/>
+    <ownedNode xsi:type="uml:InitialNode" name="activity1" outgoing="//@packagedElement.0/@edge.0"/>
+    <ownedNode xsi:type="uml:OpaqueAction" name="activity2" incoming="//@packagedElement.0/@edge.0" outgoing="//@packagedElement.0/@edge.1"/>
+    <ownedNode xsi:type="uml:ActivityFinalNode" name="activity3" incoming="//@packagedElement.0/@edge.1"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/CCTransformationDeModeles/src" modelPluginID="CCTransformationDeModeles"
+    modelName="MeteModeleProcessus" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>meteModeleProcessus.ecore</foreignModel>
+  <genPackages prefix="Process" disposableProviderFactory="true" ecorePackage="meteModeleProcessus.ecore#/">
+    <genClasses ecoreClass="meteModeleProcessus.ecore#//Process">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meteModeleProcessus.ecore#//Process/end"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meteModeleProcessus.ecore#//Process/begining"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meteModeleProcessus.ecore#//Process/currentActivity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference meteModeleProcessus.ecore#//Process/activities"/>
+    </genClasses>
+    <genClasses ecoreClass="meteModeleProcessus.ecore#//Activity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute meteModeleProcessus.ecore#//Activity/nom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meteModeleProcessus.ecore#//Activity/previous"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meteModeleProcessus.ecore#//Activity/next"/>
+    </genClasses>
+    <genClasses ecoreClass="meteModeleProcessus.ecore#//End"/>
+    <genClasses ecoreClass="meteModeleProcessus.ecore#//Init"/>
+    <genClasses image="false" ecoreClass="meteModeleProcessus.ecore#//PseudoState">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference meteModeleProcessus.ecore#//PseudoState/referencedActivity"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

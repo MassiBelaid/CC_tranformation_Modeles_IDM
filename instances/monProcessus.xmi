@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<massi:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:massi="massi"
+    xsi:schemaLocation="massi ../model/meteModeleProcessus.ecore">
+  <end referencedActivity="//@activities.2"/>
+  <begining
+      referencedActivity="//@activities.0"/>
+  <activities
+      nom="activity1"
+      next="//@activities.1"/>
+  <activities
+      nom="activity2"
+      previous="//@activities.0"
+      next="//@activities.2"/>
+  <activities
+      nom="activity3"
+      previous="//@activities.1"/>
+</massi:Process>
